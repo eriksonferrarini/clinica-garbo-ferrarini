@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Garbo e Ferrarini | Psicologia Clínica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
       </Head>
 
       <header>
@@ -18,65 +18,66 @@ export default function Home() {
 
       <div className="main-grid">
         
-        {/* --- ÁREA ESQUERDA: PERFIS (Agora em lista vertical) --- */}
+        {/* --- ÁREA ESQUERDA: PERFIS --- */}
         <div className="area-profissionais">
-          
+          <div className="frase-destaque">
+            "A escuta é o primeiro passo para o encontro consigo mesmo."
+          </div>
+
           <div className="perfis-container">
             
             {/* === Card 1: Igor Garbo === */}
             <div className="perfil-card">
-              <div className="info-container">
-                <h3>Igor Garbo</h3>
-                <p className="crp">PSICÓLOGO | CRP 08/XXXX</p>
-                
-                {/* Ícones Sociais */}
-                <div className="social-links">
-                  <a href="https://facebook.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                  <a href="https://twitter.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-                  <a href="https://wa.me/5541999999999" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-                  <a href="mailto:email@exemplo.com"><svg className="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM20 8l-8 5-8-5v10h16V8zm-8 3L4 6h16l-8 5z"/></svg></a>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                </div>
-
-                <p className="descricao">
-                  Atendimento com abordagem psicanalítica para crianças, adolescentes e adultos.
-                </p>
-                
-                {/* BOTÃO NOVO (IGOR) */}
-                <a href="https://wa.me/5541999999999" target="_blank" rel="noreferrer" className="btn-agendar">
-                  Agende Uma Consulta
+              <div className="foto-redonda foto-garbo"></div>
+              <h3>Igor Garbo</h3>
+              <p className="crp">Psicólogo | CRP 08/XXXX</p>
+              
+              {/* Ícones Sociais - Igor */}
+              <div className="social-links">
+                {/* WhatsApp */}
+                <a href="https://wa.me/5541999999999" target="_blank" rel="noreferrer" title="WhatsApp">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.654-.698c.93.513 1.733.709 2.806.709 3.183 0 5.768-2.586 5.769-5.766.001-3.186-2.585-5.771-5.769-5.771zm0 0m0 10.43c-.866 0-1.615-.246-2.493-.72l-1.636.43.435-1.594c-.588-.891-.904-1.649-.903-2.75.001-2.571 2.092-4.661 4.665-4.661 2.569.001 4.66 2.089 4.66 4.66 0 2.572-2.09 4.662-4.66 4.662zm0 0M17.409 24h-10.818C2.949 24 0 21.051 0 17.409V6.591C0 2.949 2.949 0 6.591 0h10.818C21.051 0 24 2.949 24 6.591v10.818C24 21.051 21.051 24 17.409 24zm0-21.818H6.591c-2.313 0-4.182 1.869-4.182 4.182v10.818c0 2.313 1.869 4.182 4.182 4.182h10.818c2.313 0 4.182-1.869 4.182-4.182V6.591c0-2.313-1.869-4.182-4.182-4.182zm0 0"/></svg>
+                </a>
+                {/* Email */}
+                <a href="mailto:emaildoigor@exemplo.com" title="E-mail">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+                {/* Instagram */}
+                <a href="https://instagram.com/seuinsta" target="_blank" rel="noreferrer" title="Instagram">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                 </a>
               </div>
-              
-              <div className="foto-redonda foto-garbo"></div>
+
+              <p className="descricao">
+                Atendimento com abordagem psicanalítica para crianças, adolescentes e adultos.
+              </p>
             </div>
 
             {/* === Card 2: Erikson Ferrarini === */}
             <div className="perfil-card">
-              <div className="info-container">
-                <h3>Erikson Ferrarini</h3>
-                <p className="crp">PSICÓLOGO | CRP 08/XXXX</p>
-                
-                {/* Ícones Sociais */}
-                <div className="social-links">
-                  <a href="https://facebook.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-                  <a href="https://twitter.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-                  <a href="https://wa.me/5544999126957" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
-                  <a href="mailto:email@exemplo.com"><svg className="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zM20 8l-8 5-8-5v10h16V8zm-8 3L4 6h16l-8 5z"/></svg></a>
-                  <a href="https://instagram.com" target="_blank" rel="noreferrer"><svg className="icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                </div>
-
-                <p className="descricao">
-                  Atendimento com abordagem humanista existencial para crianças e adultos.
-                </p>
-
-                {/* BOTÃO NOVO (ERIKSON) */}
-                <a href="https://wa.me/5544999126957" target="_blank" rel="noreferrer" className="btn-agendar">
-                  Agende Uma Consulta
+              <div className="foto-redonda foto-ferrarini"></div>
+              <h3>Erikson Ferrarini</h3>
+              <p className="crp">Psicólogo | CRP 08/XXXX</p>
+              
+              {/* Ícones Sociais - Erikson */}
+              <div className="social-links">
+                {/* WhatsApp */}
+                <a href="https://wa.me/5544999126957" target="_blank" rel="noreferrer" title="WhatsApp">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.654-.698c.93.513 1.733.709 2.806.709 3.183 0 5.768-2.586 5.769-5.766.001-3.186-2.585-5.771-5.769-5.771zm0 0m0 10.43c-.866 0-1.615-.246-2.493-.72l-1.636.43.435-1.594c-.588-.891-.904-1.649-.903-2.75.001-2.571 2.092-4.661 4.665-4.661 2.569.001 4.66 2.089 4.66 4.66 0 2.572-2.09 4.662-4.66 4.662zm0 0M17.409 24h-10.818C2.949 24 0 21.051 0 17.409V6.591C0 2.949 2.949 0 6.591 0h10.818C21.051 0 24 2.949 24 6.591v10.818C24 21.051 21.051 24 17.409 24zm0-21.818H6.591c-2.313 0-4.182 1.869-4.182 4.182v10.818c0 2.313 1.869 4.182 4.182 4.182h10.818c2.313 0 4.182-1.869 4.182-4.182V6.591c0-2.313-1.869-4.182-4.182-4.182zm0 0"/></svg>
+                </a>
+                {/* Email */}
+                <a href="mailto:emaildoerikson@exemplo.com" title="E-mail">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </a>
+                {/* Instagram */}
+                <a href="https://instagram.com/seuinsta" target="_blank" rel="noreferrer" title="Instagram">
+                  <svg className="icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                 </a>
               </div>
 
-              <div className="foto-redonda foto-ferrarini"></div>
+              <p className="descricao">
+                Atendimento com abordagem humanista existencial para crianças e adultos.
+              </p>
             </div>
 
           </div>
@@ -99,7 +100,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* --- ÁREA DIREITA INFERIOR: MAPA (SEM O BOTÃO ANTIGO) --- */}
+        {/* --- ÁREA DIREITA INFERIOR: MAPA E WHATSAPP GERAL --- */}
         <div className="area-contato">
           <div className="info-local">
             <div>
@@ -107,6 +108,11 @@ export default function Home() {
               <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '5px' }}>✅ Presencial e Online</p>
               <p style={{ color: '#666', fontSize: '0.9rem' }}>📍 Rua 24 de Maio, 135 - Centro<br/>Curitiba/PR</p>
             </div>
+            
+            <a href="https://wa.me/5544999126957" target="_blank" rel="noreferrer" className="btn-whatsapp">
+              Agendar via WhatsApp
+            </a>
+          
           </div>
           
           <a 
@@ -127,7 +133,7 @@ export default function Home() {
         
         body {
           font-family: 'Inter', sans-serif;
-          background-color: #f8fafc; /* Fundo levemente azulado/branco */
+          background-color: #f4f7f6;
           color: #333;
           height: 100vh;
           display: flex;
@@ -137,23 +143,23 @@ export default function Home() {
 
         header {
           padding: 20px 50px;
-          background: rgba(255,255,255,0.9);
+          background: rgba(255,255,255,0.8);
           backdrop-filter: blur(8px);
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border-bottom: 1px solid #e2e8f0;
+          border-bottom: 1px solid #ddd;
         }
 
         .brand h1 {
           font-family: 'Playfair Display', serif;
-          color: #1e293b;
+          color: #2F4F4F;
           font-size: 1.6rem;
         }
         .brand span {
           display: block;
           font-size: 0.85rem;
-          color: #64748b;
+          color: #666;
           letter-spacing: 0.5px;
           margin-top: 4px;
         }
@@ -163,114 +169,83 @@ export default function Home() {
           grid-template-columns: 1fr 1fr;
           grid-template-rows: 1fr 1fr;
           height: 100%;
-          padding: 30px 50px;
-          gap: 30px;
+          padding: 40px 50px;
+          gap: 40px;
         }
 
-        /* --- ÁREA PROFISSIONAIS (LISTA VERTICAL) --- */
         .area-profissionais {
           grid-column: 1 / 2;
           grid-row: 1 / 3;
           display: flex;
           flex-direction: column;
-          justify-content: center; /* Centraliza na altura */
+          justify-content: flex-end;
+          padding-bottom: 20px;
         }
 
-        /* Container vira coluna para empilhar os cards */
-        .perfis-container { 
-          display: flex; 
-          flex-direction: column; 
-          gap: 40px; 
+        .frase-destaque {
+          font-family: 'Playfair Display', serif;
+          font-size: 2rem;
+          color: #2F4F4F;
+          margin-bottom: 40px;
+          line-height: 1.3;
+          font-style: italic;
         }
 
-        /* === ESTILO NOVO DO CARD (HORIZONTAL) === */
+        .perfis-container { display: flex; gap: 30px; }
+
         .perfil-card {
-          background: transparent; /* Remove fundo branco quadrado se quiser, ou mantenha white */
+          background: white;
+          padding: 20px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+          text-align: center;
+          flex: 1;
+          border-top: 4px solid #8FBC8F;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
-          gap: 20px;
-          text-align: left;
         }
 
-        .info-container {
-          flex: 1; /* Ocupa o espaço que sobrar */
-        }
-
-        .perfil-card h3 { 
-          font-size: 2.2rem; /* Bem grande como na foto */
-          color: #0f172a; /* Azul bem escuro */
-          margin-bottom: 5px;
-          font-weight: 700;
-        }
-        
-        .crp { 
-          font-size: 0.75rem; 
-          color: #64748b; 
-          font-weight: 600; 
-          text-transform: uppercase; 
-          letter-spacing: 3px; /* Espaçamento chique */
-          margin-bottom: 15px; 
-        }
-        
-        .descricao { 
-          font-size: 0.95rem; 
-          color: #475569; 
-          line-height: 1.5; 
-          margin-bottom: 20px;
-          max-width: 400px; /* Segura o texto para não esticar demais */
-        }
-
-        /* FOTOS */
         .foto-redonda {
-          width: 150px; /* Foto maior */
-          height: 150px;
-          background-color: #ddd;
+          width: 100px;
+          height: 100px;
+          background-color: #333;
           border-radius: 50%;
-          flex-shrink: 0; /* Não deixa a foto esmagar */
+          margin: 0 auto 15px auto;
           background-size: cover;
           background-position: center;
-          border: 4px solid white;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+          border: 3px solid #f4f7f6;
         }
         
         .foto-garbo { background-image: url('/foto-garbo.jpg'); }
         .foto-ferrarini { background-image: url('/foto-ferrarini.jpeg'); }
 
-        /* --- REDES SOCIAIS --- */
+        .perfil-card h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
+        .crp { font-size: 0.8rem; color: #8FBC8F; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
+        .descricao { font-size: 0.9rem; color: #555; line-height: 1.4; font-style: italic; }
+
+        /* --- REDES SOCIAIS (NOVO) --- */
         .social-links {
           display: flex;
           gap: 15px;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
+          justify-content: center;
         }
         
         .icon {
           width: 20px;
           height: 20px;
-          fill: #334155;
+          fill: #2F4F4F; /* Cor dos ícones */
           transition: transform 0.2s, fill 0.2s;
         }
-        .icon:hover { transform: scale(1.1); fill: #2563eb; }
-
-        /* --- NOVO BOTÃO AZUL --- */
-        .btn-agendar {
-          display: inline-block;
-          background-color: #3b82f6; /* Azul vibrante */
-          color: white;
-          padding: 12px 30px;
-          border-radius: 50px; /* Redondo igual a foto */
-          text-decoration: none;
-          font-weight: 600;
-          font-size: 1rem;
-          transition: background 0.3s, transform 0.2s;
-          box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5);
-        }
-        .btn-agendar:hover {
-          background-color: #2563eb;
-          transform: translateY(-2px);
+        
+        .icon:hover {
+          transform: scale(1.15);
+          fill: #25D366; /* Verde ao passar o mouse */
         }
 
-        /* --- DIREITA --- */
+        /* --- FIM REDES SOCIAIS --- */
+
         .area-textos {
           grid-column: 2 / 3;
           grid-row: 1 / 2;
@@ -282,16 +257,17 @@ export default function Home() {
 
         .bloco-texto h2 {
           font-family: 'Playfair Display', serif;
-          color: #1e293b;
+          color: #2F4F4F;
           font-size: 1.5rem;
           margin-bottom: 10px;
-          border-left: 3px solid #3b82f6;
+          border-left: 3px solid #8FBC8F;
           padding-left: 15px;
         }
+        
         .bloco-texto p {
           font-size: 0.95rem;
           line-height: 1.6;
-          color: #475569;
+          color: #555;
           padding-left: 18px;
           text-align: justify;
         }
@@ -309,6 +285,20 @@ export default function Home() {
 
         .info-local { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
         
+        .btn-whatsapp {
+          background-color: #25D366;
+          color: white;
+          padding: 15px;
+          text-align: center;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          display: block;
+          margin-top: 10px;
+          transition: background 0.3s;
+        }
+        .btn-whatsapp:hover { background-color: #128C7E; }
+
         .mapa-fake {
           flex: 1.2;
           background: #eee url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Home_%E2%80%93_Maps_Media_%E2%80%93_Default.png') no-repeat center;
@@ -322,7 +312,7 @@ export default function Home() {
           text-decoration: none;
           transition: border-color 0.3s;
         }
-        .mapa-fake:hover { border-color: #3b82f6; }
+        .mapa-fake:hover { border-color: #25D366; }
         
         .mapa-label {
           background: white;
@@ -334,13 +324,11 @@ export default function Home() {
           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 768px) {
             body { height: auto; overflow-y: auto; }
             .main-grid { display: flex; flex-direction: column; padding: 20px; }
-            .area-profissionais { margin-bottom: 40px; }
-            .perfil-card { flex-direction: column-reverse; text-align: center; } /* Mobile: Foto em cima, texto embaixo */
-            .info-container { display: flex; flex-direction: column; align-items: center; }
-            .area-contato { flex-direction: column; height: 300px; }
+            .area-contato { flex-direction: column; height: 400px; }
+            .perfis-container { flex-direction: row; }
         }
       `}</style>
     </div>
