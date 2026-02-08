@@ -28,7 +28,6 @@ export default function Home() {
             {/* Card 1 - Garbo */}
             <div className="perfil-card">
               <div className="foto-redonda foto-garbo"></div>
-              {/* Edite o nome completo abaixo se necessário */}
               <h3>Psicólogo Garbo</h3>
               <p>CRP 08/XXXX</p>
             </div>
@@ -36,7 +35,6 @@ export default function Home() {
             {/* Card 2 - Ferrarini */}
             <div className="perfil-card">
               <div className="foto-redonda foto-ferrarini"></div>
-              {/* Nome Corrigido */}
               <h3>Psicólogo Ferrarini</h3>
               <p>CRP 08/XXXX</p>
             </div>
@@ -64,10 +62,11 @@ export default function Home() {
               <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '5px' }}>✅ Presencial e Online</p>
               <p style={{ color: '#666', fontSize: '0.9rem' }}>📍 Curitiba, PR</p>
             </div>
-            {/* Lembre-se de colocar o número real do WhatsApp aqui */}
-            <a href="https://wa.me/5544999129657" target="_blank" rel="noreferrer" className="btn-whatsapp">
+            
+            <a href="https://wa.me/5544999126957" target="_blank" rel="noreferrer" className="btn-whatsapp">
               Agendar via WhatsApp
             </a>
+          
           </div>
           <div className="mapa-fake"></div>
         </div>
@@ -163,13 +162,14 @@ export default function Home() {
         }
         
         /* --- FOTOS LOCAIS --- */
-        /* Certifique-se que os nomes na pasta public são exatamente estes: */
+        
         .foto-garbo { 
           background-image: url('/foto-garbo.jpg'); 
         }
         
+        /* ATENÇÃO: Aqui mudei para .jpeg conforme seu upload */
         .foto-ferrarini { 
-          background-image: url('/foto-ferrarini.jpg'); 
+          background-image: url('/foto-ferrarini.jpeg'); 
         }
 
         .perfil-card h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
@@ -217,34 +217,4 @@ export default function Home() {
         
         .btn-whatsapp {
           background-color: #25D366;
-          color: white;
-          padding: 15px;
-          text-align: center;
-          border-radius: 8px;
-          text-decoration: none;
-          font-weight: bold;
-          display: block;
-          margin-top: 10px;
-          transition: background 0.3s;
-        }
-        .btn-whatsapp:hover { background-color: #128C7E; }
-
-        .mapa-fake {
-          flex: 1.2;
-          background: #eee url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Home_%E2%80%93_Maps_Media_%E2%80%93_Default.png') no-repeat center;
-          background-size: 60px;
-          border-radius: 8px;
-          border: 1px solid #e0e0e0;
-        }
-
-        /* --- RESPONSIVIDADE (MOBILE) --- */
-        @media (max-width: 768px) {
-            body { height: auto; overflow-y: auto; }
-            .main-grid { display: flex; flex-direction: column; padding: 20px; }
-            .area-contato { flex-direction: column; height: 400px; }
-            .perfis-container { flex-direction: row; }
-        }
-      `}</style>
-    </div>
-  );
-}
+          color: white
