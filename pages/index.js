@@ -47,16 +47,20 @@ export default function Home() {
           </div>
         </div>
 
-        {/* --- ÁREA DIREITA SUPERIOR: TEXTOS --- */}
+        {/* --- ÁREA DIREITA SUPERIOR: TEXTOS NOVOS --- */}
         <div className="area-textos">
           <div className="bloco-texto">
             <h2>O que é Psicoterapia?</h2>
-            <p>É um espaço seguro de fala e escuta, onde trabalhamos juntos para compreender suas emoções e construir novos caminhos.</p>
+            <p>
+              Compreendemos a psicoterapia para além do tratamento de sintomas ou de diagnósticos. Para nós ela é, antes de tudo, um encontro humano transformador. Oferecemos um espaço de escuta empática, autêntica e livre de julgamentos, criando as condições seguras para que você possa entrar em contato consigo mesmo. É através desse relacionamento genuíno e acolhedor que o desenvolvimento pessoal acontece, permitindo que você assuma o protagonismo da sua própria mudança e encontre sentidos para as suas vivências.
+            </p>
           </div>
 
           <div className="bloco-texto">
             <h2>Para quem é indicado?</h2>
-            <p>Para todos que desejam autoconhecimento, ou que buscam auxílio para lidar com ansiedade, conflitos, luto e mudanças de vida.</p>
+            <p>
+              A psicoterapia é indicada para quem busca não apenas o alívio de sofrimentos, mas a oportunidade de se encontrar consigo mesmo e desenvolver sua autonomia. É um espaço para quem deseja ressignificar suas experiências e assumir um papel ativo e consciente na própria vida.
+            </p>
           </div>
         </div>
 
@@ -210,10 +214,11 @@ export default function Home() {
         }
         
         .bloco-texto p {
-          font-size: 1rem;
+          font-size: 0.95rem; /* Levemente reduzido para caber mais texto */
           line-height: 1.6;
           color: #555;
           padding-left: 18px;
+          text-align: justify; /* Melhora a leitura do bloco maior */
         }
 
         .area-contato {
