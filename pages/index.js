@@ -25,19 +25,19 @@ export default function Home() {
           </div>
 
           <div className="perfis-container">
-            {/* Card 1 */}
-            <div className="perfil-card">
-              <div className="foto-redonda foto-garbo"></div>
-              <h3>Psicólogo Garbo</h3>
-              <p>CRP 08/XXXX</p>
-            </div>
+           {/* Card 1 */}
+<div className="perfil-card">
+  <div className="foto-redonda foto-garbo"></div>
+  <h3>Nome Real Dele(a)</h3>  {/* <--- Mude aqui */}
+  <p>CRP 08/XXXX</p>          {/* <--- Aproveite e ponha o CRP certo */}
+</div>
 
-            {/* Card 2 */}
-            <div className="perfil-card">
-              <div className="foto-redonda foto-ferraini"></div>
-              <h3>Psicólogo Ferraini</h3>
-              <p>CRP 08/XXXX</p>
-            </div>
+{/* Card 2 */}
+<div className="perfil-card">
+  <div className="foto-redonda foto-ferraini"></div>
+  <h3>Erikson Ferraini</h3>   {/* <--- Mude aqui */}
+  <p>CRP 08/XXXX</p>
+</div>
           </div>
         </div>
 
