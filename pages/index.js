@@ -159,8 +159,8 @@ export default function Home() {
         }
         
         /* Placeholders de imagem */
-        .foto-garbo { background-image: url('https://randomuser.me/api/portraits/men/45.jpg'); }
-        .foto-ferraini { background-image: url('https://randomuser.me/api/portraits/men/32.jpg'); }
+.foto-garbo { background-image: url('/foto-garbo.jpg'); } 
+.foto-ferraini { background-image: url('/foto-ferraini.jpg'); }
 
         .perfil-card h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
         .perfil-card p { font-size: 0.85rem; color: #777; }
