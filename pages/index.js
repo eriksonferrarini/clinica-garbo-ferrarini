@@ -84,3 +84,197 @@ export default function Home() {
             <span className="mapa-label">Ver no Mapa</span>
           </a>
         </div>
+
+      </div>
+
+      {/* --- ESTILOS CSS --- */}
+      <style jsx global>{`
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+          font-family: 'Inter', sans-serif;
+          background-color: #f4f7f6;
+          color: #333;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+        }
+
+        header {
+          padding: 20px 50px;
+          background: rgba(255,255,255,0.8);
+          backdrop-filter: blur(8px);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #ddd;
+        }
+
+        .brand h1 {
+          font-family: 'Playfair Display', serif;
+          color: #2F4F4F;
+          font-size: 1.6rem;
+        }
+        .brand span {
+          display: block;
+          font-size: 0.85rem;
+          color: #666;
+          letter-spacing: 0.5px;
+          margin-top: 4px;
+        }
+
+        .main-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          height: 100%;
+          padding: 40px 50px;
+          gap: 40px;
+        }
+
+        .area-profissionais {
+          grid-column: 1 / 2;
+          grid-row: 1 / 3;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 20px;
+        }
+
+        .frase-destaque {
+          font-family: 'Playfair Display', serif;
+          font-size: 2rem;
+          color: #2F4F4F;
+          margin-bottom: 40px;
+          line-height: 1.3;
+          font-style: italic;
+        }
+
+        .perfis-container { display: flex; gap: 30px; }
+
+        .perfil-card {
+          background: white;
+          padding: 20px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+          text-align: center;
+          flex: 1;
+          border-top: 4px solid #8FBC8F;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .foto-redonda {
+          width: 100px;
+          height: 100px;
+          background-color: #333;
+          border-radius: 50%;
+          margin: 0 auto 15px auto;
+          background-size: cover;
+          background-position: center;
+          border: 3px solid #f4f7f6;
+        }
+        
+        .foto-garbo { 
+          background-image: url('/foto-garbo.jpg'); 
+        }
+        
+        .foto-ferrarini { 
+          background-image: url('/foto-ferrarini.jpeg'); 
+        }
+
+        .perfil-card h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
+        
+        .crp { font-size: 0.8rem; color: #8FBC8F; font-weight: bold; text-transform: uppercase; margin-bottom: 10px; }
+        
+        .descricao { font-size: 0.9rem; color: #555; line-height: 1.4; font-style: italic; }
+
+        .area-textos {
+          grid-column: 2 / 3;
+          grid-row: 1 / 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 30px;
+        }
+
+        .bloco-texto h2 {
+          font-family: 'Playfair Display', serif;
+          color: #2F4F4F;
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+          border-left: 3px solid #8FBC8F;
+          padding-left: 15px;
+        }
+        
+        .bloco-texto p {
+          font-size: 1rem;
+          line-height: 1.6;
+          color: #555;
+          padding-left: 18px;
+        }
+
+        .area-contato {
+          grid-column: 2 / 3;
+          grid-row: 2 / 3;
+          background: white;
+          border-radius: 16px;
+          padding: 30px;
+          box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+          display: flex;
+          gap: 20px;
+        }
+
+        .info-local { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        
+        .btn-whatsapp {
+          background-color: #25D366;
+          color: white;
+          padding: 15px;
+          text-align: center;
+          border-radius: 8px;
+          text-decoration: none;
+          font-weight: bold;
+          display: block;
+          margin-top: 10px;
+          transition: background 0.3s;
+        }
+        .btn-whatsapp:hover { background-color: #128C7E; }
+
+        .mapa-fake {
+          flex: 1.2;
+          background: #eee url('https://upload.wikimedia.org/wikipedia/commons/e/ec/Map_marker_icon_%E2%80%93_Nicolas_Mollet_%E2%80%93_Home_%E2%80%93_Maps_Media_%E2%80%93_Default.png') no-repeat center;
+          background-size: 60px;
+          border-radius: 8px;
+          border: 1px solid #e0e0e0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          padding-bottom: 10px;
+          text-decoration: none;
+          transition: border-color 0.3s;
+        }
+        .mapa-fake:hover { border-color: #25D366; }
+        
+        .mapa-label {
+          background: white;
+          padding: 4px 10px;
+          border-radius: 4px;
+          font-size: 0.75rem;
+          font-weight: bold;
+          color: #333;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            body { height: auto; overflow-y: auto; }
+            .main-grid { display: flex; flex-direction: column; padding: 20px; }
+            .area-contato { flex-direction: column; height: 400px; }
+            .perfis-container { flex-direction: row; }
+        }
+      `}</style>
+    </div>
+  );
+}
