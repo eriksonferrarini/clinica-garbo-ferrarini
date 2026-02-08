@@ -65,7 +65,7 @@ export default function Home() {
               <p style={{ color: '#666', fontSize: '0.9rem' }}>📍 Curitiba, PR</p>
             </div>
             {/* Lembre-se de colocar o número real do WhatsApp aqui */}
-            <a href="https://wa.me/5541999999999" target="_blank" rel="noreferrer" className="btn-whatsapp">
+            <a href="https://wa.me/5544999129657" target="_blank" rel="noreferrer" className="btn-whatsapp">
               Agendar via WhatsApp
             </a>
           </div>
