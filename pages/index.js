@@ -4,44 +4,46 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Garbo e Ferraini | Psicologia Clínica</title>
+        <title>Garbo e Ferrarini | Psicologia Clínica</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
       </Head>
 
       <header>
         <div className="brand">
-          <h1>Garbo e Ferraini</h1>
+          <h1>Garbo e Ferrarini</h1>
           <span>Psicologia Clínica, um espaço de escuta e acolhimento</span>
         </div>
       </header>
 
       <div className="main-grid">
         
-        {/* ÁREA ESQUERDA: PERFIS */}
+        {/* --- ÁREA ESQUERDA: PERFIS --- */}
         <div className="area-profissionais">
           <div className="frase-destaque">
             "A escuta é o primeiro passo para o encontro consigo mesmo."
           </div>
 
           <div className="perfis-container">
-           {/* Card 1 */}
-<div className="perfil-card">
-  <div className="foto-redonda foto-garbo"></div>
-  <h3>Nome Real Dele(a)</h3>  {/* <--- Mude aqui */}
-  <p>CRP 08/XXXX</p>          {/* <--- Aproveite e ponha o CRP certo */}
-</div>
+            {/* Card 1 - Garbo */}
+            <div className="perfil-card">
+              <div className="foto-redonda foto-garbo"></div>
+              {/* Edite o nome completo abaixo se necessário */}
+              <h3>Psicólogo Garbo</h3>
+              <p>CRP 08/XXXX</p>
+            </div>
 
-{/* Card 2 */}
-<div className="perfil-card">
-  <div className="foto-redonda foto-ferraini"></div>
-  <h3>Erikson Ferraini</h3>   {/* <--- Mude aqui */}
-  <p>CRP 08/XXXX</p>
-</div>
+            {/* Card 2 - Ferrarini */}
+            <div className="perfil-card">
+              <div className="foto-redonda foto-ferrarini"></div>
+              {/* Nome Corrigido */}
+              <h3>Psicólogo Ferrarini</h3>
+              <p>CRP 08/XXXX</p>
+            </div>
           </div>
         </div>
 
-        {/* ÁREA DIREITA SUPERIOR: TEXTOS */}
+        {/* --- ÁREA DIREITA SUPERIOR: TEXTOS --- */}
         <div className="area-textos">
           <div className="bloco-texto">
             <h2>O que é Psicoterapia?</h2>
@@ -54,7 +56,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ÁREA DIREITA INFERIOR: MAPA E WHATSAPP */}
+        {/* --- ÁREA DIREITA INFERIOR: MAPA E WHATSAPP --- */}
         <div className="area-contato">
           <div className="info-local">
             <div>
@@ -62,6 +64,7 @@ export default function Home() {
               <p style={{ color: '#666', fontSize: '0.9rem', marginBottom: '5px' }}>✅ Presencial e Online</p>
               <p style={{ color: '#666', fontSize: '0.9rem' }}>📍 Curitiba, PR</p>
             </div>
+            {/* Lembre-se de colocar o número real do WhatsApp aqui */}
             <a href="https://wa.me/5541999999999" target="_blank" rel="noreferrer" className="btn-whatsapp">
               Agendar via WhatsApp
             </a>
@@ -71,7 +74,7 @@ export default function Home() {
 
       </div>
 
-      {/* ESTILOS CSS (Global Style) */}
+      {/* --- ESTILOS CSS (Global Style) --- */}
       <style jsx global>{`
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -117,6 +120,7 @@ export default function Home() {
           gap: 40px;
         }
 
+        /* --- ÁREA PROFISSIONAIS --- */
         .area-profissionais {
           grid-column: 1 / 2;
           grid-row: 1 / 3;
@@ -158,13 +162,20 @@ export default function Home() {
           border: 3px solid #f4f7f6;
         }
         
-        /* Placeholders de imagem */
-.foto-garbo { background-image: url('/foto-garbo.jpg'); } 
-.foto-ferraini { background-image: url('/foto-ferraini.jpg'); }
+        /* --- FOTOS LOCAIS --- */
+        /* Certifique-se que os nomes na pasta public são exatamente estes: */
+        .foto-garbo { 
+          background-image: url('/foto-garbo.jpg'); 
+        }
+        
+        .foto-ferrarini { 
+          background-image: url('/foto-ferrarini.jpg'); 
+        }
 
         .perfil-card h3 { font-size: 1.1rem; color: #333; margin-bottom: 5px; }
         .perfil-card p { font-size: 0.85rem; color: #777; }
 
+        /* --- ÁREA TEXTOS --- */
         .area-textos {
           grid-column: 2 / 3;
           grid-row: 1 / 2;
@@ -190,6 +201,7 @@ export default function Home() {
           padding-left: 18px;
         }
 
+        /* --- ÁREA CONTATO --- */
         .area-contato {
           grid-column: 2 / 3;
           grid-row: 2 / 3;
@@ -225,10 +237,12 @@ export default function Home() {
           border: 1px solid #e0e0e0;
         }
 
+        /* --- RESPONSIVIDADE (MOBILE) --- */
         @media (max-width: 768px) {
             body { height: auto; overflow-y: auto; }
             .main-grid { display: flex; flex-direction: column; padding: 20px; }
             .area-contato { flex-direction: column; height: 400px; }
+            .perfis-container { flex-direction: row; }
         }
       `}</style>
     </div>
